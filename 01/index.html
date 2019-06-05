@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>Hamburger Menu</title>
+  </head>
+  <body>
+    <div id="hamburger-Icon" onclick="handleVisibilityToggle(event)">&#9776;</div>
+    <div class="nav-Menu">
+      <div id="home">Home</div>
+      <div id="about">About</div>
+      <div id="contact">Contact</div>
+    </div>
+    <style>
+      #hamburger-Icon {
+        float: left;
+      }
+
+      .nav-Menu {
+        display: flex;
+        justify-content: space-around;
+        visibility: hidden;
+      }
+    </style>
+    <script>
+      const handleVisibilityToggle = (event) => {
+        if (event.target.id === 'hamburger-Icon') {
+          if (window.getComputedStyle(document.getElementsByClassName('nav-Menu')[0]).visibility === 'hidden') {
+            document.getElementsByClassName('nav-Menu')[0].style.visibility = 'visible';
+          } else {
+            document.getElementsByClassName('nav-Menu')[0].style.visibility = 'hidden';
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

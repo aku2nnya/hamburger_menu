@@ -1,2 +1,2 @@
 # hamburger_menu
-Hamburger navigation menu with JS / HTML / CSS only.
+Various hamburger navigation menus.
