@@ -6,7 +6,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: '/Users/aku2nnya/Desktop/Coding/GitHub/hamburger_menu/02/node_modules',
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
