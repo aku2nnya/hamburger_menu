@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar';
 
 
 class App extends React.Component {
@@ -11,10 +12,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        TEST
-      </div>
-    )
+      <>
+        <div className="hamburger-icon">&#9776;</div>
+        <Navbar />
+      </>
+    );
   }
 }
 

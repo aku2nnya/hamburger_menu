@@ -1,3 +1,45 @@
-#app {
+body {
+  background-color: rgb(156, 198, 244);
+}
+
+.hamburger-icon {
+  text-align: right;
+  position: sticky;
+  padding-bottom: 5px;
+}
+
+.navbar {
+  background-color: rgb(209, 220, 232);
+  float: right;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 2px;
+  z-index: 1;
+}
+
+.home {
+  padding: 2px;
+}
+
+.home:hover {
+  background-color: white;
+}
+
+.about {
+  padding: 2px;
+}
+
+.about:hover {
+  background-color: white;
+}
+
+.contact {
+  padding: 2px;
+}
+
+.contact:hover {
+  background-color: white;
 }

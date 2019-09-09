@@ -20,7 +20,10 @@ module.exports = {
     extensions: ['*', '.js', '.jsx', '.css'],
   },
   output: {
-    filename: 'app.js',
+    filename: 'App.js',
     path: path.join(__dirname, './'),
   },
+  watchOptions: {
+    ignored: ['./node_modules', './App.js'],
+  }
 }
