@@ -1,0 +1,47 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  float: left;
+  height: 100vh;
+  padding: 0px 7px 0px 5px;
+  background-color: lightgreen;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+}
+
+.navmenu {
+  position: relative;
+  left: -150%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.2s;
+}
+
+.navmenu.active {
+  left: 0;
+  transition: 0.2s;
+}
+
+.home, .about, .contact {
+  display: none;
+  margin: 1px;
+  border: solid 1px;
+  padding: 4px;
+  background-color: lightgray;
+}
+
+.home.active, .about.active, .contact.active {
+  display: block;
+}
+
+.home:hover, .about:hover, .contact:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
